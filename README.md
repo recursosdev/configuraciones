@@ -28,3 +28,7 @@ git config credential.helper cache
 >El comando de arriba cachea las credenciales usuario y pasword token para no tener que indicarlo cada vez que hagamos un push.
 
 Cuando nos pida el usuario, indicaremos el usuario de nuestro repositorio, y cuando nos pida el password, indicaremos el **token**.
+
+### Vincular VSCode
+
+Si queremos vincular VSCode para que administre git, directamente nos logueamos desde este IDE y seguimos los pasos que nos va pidiendo.
