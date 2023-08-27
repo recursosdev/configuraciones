@@ -19,15 +19,23 @@ Logueados en github, vamos a ir a [https://github.com/settings/tokens/new](https
 * Seleccionamos `repo` en `Select scopes` para tener los accesos.
 * Creamos token `Generate token`
 
-En local activar escribiremos en consola:
+Hora cuando hagamos un push, nos va a solicitar usuario (user) y contraseña (password).
+
+Cuando nos pida el usuario, indicaremos el usuario de nuestro repositorio, y cuando nos pida el password, indicaremos el **token** generado.
+
+Para no volver a escribir el usuario y el token cada vez que hacemos un push a github, podemos indicar a git que cachee `cache` por un tiempo corto (un día por ejemplo), o bien guarde `store` en el disco definitivamente.
+
+Para el caché utilizaremos esta línea siempre ubicados dentro de nuestro proyecto:
 
 ```bash
 git config credential.helper cache
 ```
 
->El comando de arriba cachea las credenciales usuario y pasword token para no tener que indicarlo cada vez que hagamos un push.
+Y para almacenarlo en el dico definitivamente:
 
-Cuando nos pida el usuario, indicaremos el usuario de nuestro repositorio, y cuando nos pida el password, indicaremos el **token**.
+```bash
+git config credential.helper store
+```
 
 ### Vincular VSCode
 
